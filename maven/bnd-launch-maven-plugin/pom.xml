@@ -7,8 +7,8 @@
         <version>3.4.0-SNAPSHOT</version>
         <relativePath>..</relativePath>
     </parent>
-	<artifactId>bnd-export-maven-plugin</artifactId>
-	<description>Resolve and Export OSGi applications.</description>
+	<artifactId>bnd-launch-maven-plugin</artifactId>
+	<description>Launch an Container from an OSGi bndrun file</description>
 	<name>${project.groupId}:${project.artifactId}</name>
     <packaging>maven-plugin</packaging>
 
@@ -48,32 +48,23 @@
             <version>3.2.2</version>
         </dependency>
     </dependencies>
-
+ 
     <build>
         <plugins>
-<!--             <plugin> -->
-<!--                 <artifactId>maven-invoker-plugin</artifactId> -->
+<!--            <plugin> -->
+<!--                 <groupId>biz.aQute.bnd</groupId> -->
+<!--                 <artifactId>bnd-testing-maven-plugin</artifactId> -->
+<!--                 <version>${project.version}</version> -->
 <!--                 <configuration> -->
-<!--                     <cloneProjectsTo>${project.build.directory}/integration-test/projects</cloneProjectsTo> -->
-<!--                     <cloneClean>true</cloneClean> -->
-<!--                     <projectsDirectory>src/test/resources/integration-test</projectsDirectory> -->
-<!--                     <settingsFile>src/test/resources/integration-test/settings.xml</settingsFile> -->
-<!--                     <localRepositoryPath>${project.build.directory}/integration-test/repo</localRepositoryPath> -->
-<!--                     <postBuildHookScript>verify.groovy</postBuildHookScript> -->
-<!--                     <goals> -->
-<!--                         <goal>package</goal> -->
-<!--                     </goals> -->
-<!--                     <debug>true</debug> -->
-<!--                     <scriptVariables> -->
-<!--                       <bndVersion>${project.version}</bndVersion> -->
-<!--                     </scriptVariables> -->
+<!--                     <bndruns> -->
+<!--                         <bndrun>test.bndrun</bndrun> -->
+<!--                     </bndruns> -->
+<!--                     <targetDir>.</targetDir> -->
 <!--                 </configuration> -->
 <!--                 <executions> -->
 <!--                     <execution> -->
-<!--                         <id>integration-test</id> -->
 <!--                         <goals> -->
-<!--                             <goal>install</goal> -->
-<!--                             <goal>run</goal> -->
+<!--                             <goal>testing</goal> -->
 <!--                         </goals> -->
 <!--                     </execution> -->
 <!--                 </executions> -->

@@ -63,3 +63,4 @@ Private-Package: \
 	aQute.bnd.ant,\
 	aQute.bnd.enroute.commands,\
 	aQute.bnd.main
+Bundle-Version: 3.4.0.${tstamp}
